@@ -1,0 +1,40 @@
+# system ls aliases
+alias ls='ls -G'
+# alias ll='ls -AlG'
+alias ll='ls -alFh'
+alias la='ls -AG'
+alias l='ls -CFG'
+
+alias ..='cd ..'
+alias h?="history | grep "
+alias habits='history | sed 's/^[[:space:]]*[0-9]*[[:space:]]*//' | sort | uniq -c | sort -n -r | head -n 10'
+
+#bin shortcuts
+alias tm='mate'
+alias sbl='subl'
+alias sb='subl'
+alias ipy='ipython '
+alias ipyn='ipython notebook'
+alias py='python'
+alias p='python'
+alias pythons='cd /Library/Frameworks/Python.framework/Versions/'
+alias webserverhere='python -m SimpleHTTPServer'
+alias mailserverhere='python -m smtpd -n -c DebuggingServer localhost:1025'
+
+#Commands shortcuts
+alias sbp='source ~/.bash_profile'
+alias vh='sudo virtualhost.sh'
+alias dbbkp='sudo /usr/local/bin/automysqlbackup'
+alias rmsvn='find . -iname '.svn' -print0 | xargs -0 rm -rf'
+
+#vagrant
+alias vu='vagrant up'
+alias vh='vagrant halt'
+alias vssh='vagrant ssh'
+
+#project aliases
+alias code='cd ~/code'alias inspire='cd ~/code/inspire && vagrant up && vagrant ssh'
+
+#ssh shortcuts
+alias sshmini='ssh gonzalo@79.173.154.118'
+
