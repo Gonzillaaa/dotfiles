@@ -1,4 +1,4 @@
-init_project() {
+init_pproject() {
     if [[ $# -ne 1 ]]; then
         echo "Usage: init_python_project <project_name>"
         return 1
@@ -12,10 +12,7 @@ init_project() {
         return 1
     }
 
-    # Optional: Environment variables
-    touch ".env"
-
-    git init
+    #git init
     python3 -m venv "$env_name"
     echo "Virtual environment '${env_name}' created."
 
@@ -33,7 +30,4 @@ init_project() {
     pip install --upgrade pip
     echo "Environment activated and essential packages installed."
 
-
-    curl -#fLo- 'https://raw.githubusercontent.com/hyperupcall/autoenv/master/scripts/install.sh' | sh
-    echo "autoenv installed."
 }
