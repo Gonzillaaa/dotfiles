@@ -33,8 +33,7 @@ alias vh='vagrant halt'
 alias vssh='vagrant ssh'
 
 #project aliases
-alias code='cd ~/code'alias inspire='cd ~/code/inspire && vagrant up && vagrant ssh'
 
 #ssh shortcuts
-alias sshmini='ssh gonzalo@79.173.154.118'
+
 

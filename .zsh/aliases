@@ -1,0 +1,13 @@
+# system ls aliases
+alias ls='ls -G'
+# alias ll='ls -AlG'
+alias ll='ls -alFh'
+alias la='ls -AG'
+alias l='ls -CFG'
+
+alias ..='cd ..'
+alias h?="history | grep "
+alias habits='history | sed 's/^[[:space:]]*[0-9]*[[:space:]]*//' | sort | uniq -c | sort -n -r | head -n 10'
+
+alias py='python3'
+alias p='python3'
